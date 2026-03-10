@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkateFest • Sistema de Competição</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- FUNDO COM ELEMENTOS DE SKATE -->
+    <div class="background-skate">
+        <div class="shape-shape"></div>
+        <div class="shape-shape2"></div>
+        <div class="shape-shape3"></div>
+        <div class="shape-shape4"></div>
+        <div class="graffiti-bg"></div>
+        <div class="graffiti-bg2"></div>
+        
+        <!-- ELEMENTOS DE SKATE FEITOS COM CSS -->
+        <div class="skate-decor skate1"></div>
+        <div class="skate-decor skate2"></div>
+        <div class="skate-decor skate3"></div>
+        <div class="skate-decor skate4"></div>
+        
+        <div class="truck-decor truck-left"></div>
+        <div class="truck-decor truck-right"></div>
+        
+        <div class="wheel-decor wheel1"></div>
+        <div class="wheel-decor wheel2"></div>
+        <div class="wheel-decor wheel3"></div>
+        <div class="wheel-decor wheel4"></div>
+        <div class="wheel-decor wheel5"></div>
+        <div class="wheel-decor wheel6"></div>
+        
+        <div class="rail-decor rail1"></div>
+        <div class="rail-decor rail2"></div>
+        
+        <div class="halfpipe"></div>
+    </div>
+
+    <!-- CONTAINER PRINCIPAL -->
+    <main class="container-principal">
+        <!-- CABEÇALHO -->
+        <header class="cabecalho">
+            <div class="skate-icon-css">
+                <div class="deck" style="background: linear-gradient(90deg, #5C65C0, #6F95FF);"></div>
+                <div class="trucks" style="background: #413B6B;"></div>
+                <div class="wheels">
+                    <div class="wheel" style="background: radial-gradient(circle at 30% 30%, #6F95FF, #5C65C0);"></div>
+                    <div class="wheel" style="background: radial-gradient(circle at 30% 30%, #6F95FF, #5C65C0);"></div>
+                </div>
+            </div>
+            
+            <h1 class="titulo-principal">
+                <span class="titulo-span" style="background: linear-gradient(135deg, #fff, #6F95FF); -webkit-background-clip: text;">SKATE</span>
+                <span class="titulo-span" style="background: linear-gradient(135deg, #fff, #5C65C0); -webkit-background-clip: text;">FEST</span>
+            </h1>
+            
+            <div class="skate-icon-css reverse">
+                <div class="deck" style="background: linear-gradient(90deg, #5C65C0, #6F95FF);"></div>
+                <div class="trucks" style="background: #413B6B;"></div>
+                <div class="wheels">
+                    <div class="wheel" style="background: radial-gradient(circle at 30% 30%, #6F95FF, #5C65C0);"></div>
+                    <div class="wheel" style="background: radial-gradient(circle at 30% 30%, #6F95FF, #5C65C0);"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- GRID PRINCIPAL -->
+        <div class="grid-conteudo">
+            <!-- COLUNA ESQUERDA - CADASTRO -->
+            <section class="card-cadastro">
+                <div class="card-titulo">
+                    <div class="shape-pequeno" style="background: linear-gradient(90deg, #5C65C0, #6F95FF);"></div>
+                    <h2 style="color: #fff;">CADASTRO</h2>
+                    <div class="shape-pequeno" style="background: linear-gradient(90deg, #5C65C0, #6F95FF);"></div>
+                </div>
+                
+                <form id="formSkater" class="formulario">
+                    <!-- NOME -->
+                    <div class="campo">
+                        <label for="nome" class="label" style="color: #fff;">
+                            <span class="label-icone" style="background: #5C65C0;"></span>
+                            NOME DO SKATISTA
+                        </label>
+                        <div class="input-container">
+                            <input type="text" id="nome" placeholder="Ex: TONY HAWK" required
+                                   style="background: rgba(65, 59, 107, 0.3); border: 2px solid #413B6B; color: #fff;">
+                            <div class="linha-skate" style="background: linear-gradient(90deg, #5C65C0, #6F95FF);"></div>
+                        </div>
+                    </div>
+
+                    <!-- PAIS E IDADE -->
+                    <div class="linha-campos">
+                        <div class="campo">
+                            <label for="pais" class="label" style="color: #fff;">
+                                <span class="label-icone" style="background: #5C65C0;"></span>
+                                PAÍS
+                            </label>
+                            <div class="input-container">
+                                <input type="text" id="pais" placeholder="BRASIL" required
+                                       style="background: rgba(65, 59, 107, 0.3); border: 2px solid #413B6B; color: #fff;">
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="idade" class="label" style="color: #fff;">
+                                <span class="label-icone" style="background: #5C65C0;"></span>
+                                IDADE
+                            </label>
+                            <div class="input-container">
+                                <input type="number" id="idade" placeholder="18" min="10" max="60" required
+                                       style="background: rgba(65, 59, 107, 0.3); border: 2px solid #413B6B; color: #fff;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NOTAS DAS MANOBRAS -->
+                    <div class="secao-notas" style="background: rgba(65, 59, 107, 0.2);">
+                        <div class="notas-titulo">
+                            <div class="grip-tape" style="background: repeating-linear-gradient(45deg, #413B6B 0px, #413B6B 5px, #5C65C0 5px, #5C65C0 10px);"></div>
+                            <h3 style="color: #fff;">NOTAS DAS MANOBRAS</h3>
+                            <div class="grip-tape" style="background: repeating-linear-gradient(45deg, #413B6B 0px, #413B6B 5px, #5C65C0 5px, #5C65C0 10px);"></div>
+                        </div>
+
+                        <div class="grid-notas">
+                            <div class="item-nota">
+                                <span class="numero-manobra" style="color: #6F95FF;">01</span>
+                                <div class="input-container">
+                                    <input type="number" id="manobra1" class="input-nota" min="0" max="10" step="0.1" placeholder="0.0" required
+                                           style="background: rgba(65, 59, 107, 0.3); border: 2px solid #413B6B; color: #fff;">
+                                </div>
+                                <span class="nome-manobra" style="color: #fff;">KICKFLIP</span>
+                            </div>
+                            
+                            <div class="item-nota">
+                                <span class="numero-manobra" style="color: #6F95FF;">02</span>
+                                <div class="input-container">
+                                    <input type="number" id="manobra2" class="input-nota" min="0" max="10" step="0.1" placeholder="0.0" required
+                                           style="background: rgba(65, 59, 107, 0.3); border: 2px solid #413B6B; color: #fff;">
+                                </div>
+                                <span class="nome-manobra" style="color: #fff;">HEELFLIP</span>
+                            </div>
+                            
+                            <div class="item-nota">
+                                <span class="numero-manobra" style="color: #6F95FF;">03</span>
+                                <div class="input-container">
+                                    <input type="number" id="manobra3" class="input-nota" min="0" max="10" step="0.1" placeholder="0.0" required
+                                           style="background: rgba(65, 59, 107, 0.3); border: 2px solid #413B6B; color: #fff;">
+                                </div>
+                                <span class="nome-manobra" style="color: #fff;">TRE FLIP</span>
+                            </div>
+                            
+                            <div class="item-nota">
+                                <span class="numero-manobra" style="color: #6F95FF;">04</span>
+                                <div class="input-container">
+                                    <input type="number" id="manobra4" class="input-nota" min="0" max="10" step="0.1" placeholder="0.0" required
+                                           style="background: rgba(65, 59, 107, 0.3); border: 2px solid #413B6B; color: #fff;">
+                                </div>
+                                <span class="nome-manobra" style="color: #fff;">VARIAL</span>
+                            </div>
+                            
+                            <div class="item-nota">
+                                <span class="numero-manobra" style="color: #6F95FF;">05</span>
+                                <div class="input-container">
+                                    <input type="number" id="manobra5" class="input-nota" min="0" max="10" step="0.1" placeholder="0.0" required
+                                           style="background: rgba(65, 59, 107, 0.3); border: 2px solid #413B6B; color: #fff;">
+                                </div>
+                                <span class="nome-manobra" style="color: #fff;">LASER</span>
+                            </div>
+                        </div>
+
+                        <!-- TRUCK DECORATIVO -->
+                        <div class="truck-decorativo">
+                            <div class="truck-base" style="background: #413B6B;"></div>
+                            <div class="truck-eixo" style="background: #5C65C0;"></div>
+                            <div class="truck-rodas">
+                                <div class="roda-pequena" style="background: radial-gradient(circle at 30% 30%, #6F95FF, #5C65C0);"></div>
+                                <div class="roda-pequena" style="background: radial-gradient(circle at 30% 30%, #6F95FF, #5C65C0);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BOTÃO CADASTRAR -->
+                    <button type="submit" class="btn-radical" 
+                            style="background: linear-gradient(90deg, #5C65C0, #6F95FF); box-shadow: 0 5px 0 #413B6B;">
+                        <span class="btn-texto" style="color: #fff;">DROP IN!</span>
+                        <div class="btn-skate">
+                            <div class="btn-deck" style="background: #413B6B;"></div>
+                            <div class="btn-trucks" style="background: #5C65C0;"></div>
+                            <div class="btn-wheels">
+                                <div class="btn-wheel" style="background: radial-gradient(circle at 30% 30%, #6F95FF, #fff);"></div>
+                                <div class="btn-wheel" style="background: radial-gradient(circle at 30% 30%, #6F95FF, #fff);"></div>
+                            </div>
+                        </div>
+                    </button>
+                </form>
+            </section>
+
+            <!-- COLUNA DIREITA - RANKING -->
+            <section class="card-ranking">
+                <div class="card-titulo">
+                    <div class="shape-pequeno" style="background: linear-gradient(90deg, #5C65C0, #6F95FF);"></div>
+                    <h2 style="color: #fff;">RANKING</h2>
+                    <div class="shape-pequeno" style="background: linear-gradient(90deg, #5C65C0, #6F95FF);"></div>
+                </div>
+
+                <!-- PODIUM CSS -->
+                <div class="podium-container">
+                    <div class="podium-item segundo">
+                        <div class="podium-numero" style="color: #fff;">2</div>
+                        <div class="podium-base" style="background: linear-gradient(135deg, #413B6B, #5C65C0);"></div>
+                    </div>
+                    <div class="podium-item primeiro">
+                        <div class="podium-numero" style="color: #fff;">1</div>
+                        <div class="podium-base" style="background: linear-gradient(135deg, #5C65C0, #6F95FF);"></div>
+                        <div class="coroa"></div>
+                    </div>
+                    <div class="podium-item terceiro">
+                        <div class="podium-numero" style="color: #fff;">3</div>
+                        <div class="podium-base" style="background: linear-gradient(135deg, #301C41, #413B6B);"></div>
+                    </div>
+                </div>
+
+                <!-- ESTATÍSTICAS -->
+                <div class="estatisticas" id="totalSkaters" style="background: rgba(65, 59, 107, 0.3);">
+                    <div class="shape-stats" style="background: #5C65C0;"></div>
+                    <span class="stats-numero" style="color: #fff;">0</span>
+                    <span class="stats-texto" style="color: #fff;">PARTICIPANTES</span>
+                </div>
+
+                <!-- LISTA DE SKATISTAS -->
+                <div class="lista-skate" id="listaSkaters">
+                    <!-- CARDS SERÃO INSERIDOS VIA JS -->
+                </div>
+
+                <!-- BOTÃO LIMPAR -->
+                <button class="btn-limpar" id="limparTodos"
+                        style="border: 2px solid #5C65C0; color: #fff;">
+                    <span class="limpar-texto">RESETAR PISTA</span>
+                    <div class="limpar-icone" style="background: #fff;"></div>
+                </button>
+
+                <!-- TRUCK DECORATIVO -->
+                <div class="truck-footer" style="background: #413B6B;"></div>
+            </section>
+        </div>
+    </main>
+
+    <!-- CONTAINER DE NOTIFICAÇÕES -->
+    <div class="container-toast" id="toastContainer"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
